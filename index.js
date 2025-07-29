@@ -36,7 +36,47 @@ $(document).ready(function () {
     var swiper = new Swiper(".swiper-topnavnews", {
       slidesPerView: 1,
       spaceBetween: 0,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
       loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  });
+
+  $(document).ready(function () {
+    let headerHeight = $(".header-area").outerHeight();
+    let lastScroll = 0;
+
+    $(window).scroll(function () {
+      let currentScroll = $(this).scrollTop();
+
+      // Add sticky header when scrolling down past header height
+      if (currentScroll > headerHeight) {
+        $(".mega-menu").addClass("sticky-header");
+        $(".mega-menu-mobile").addClass("sticky-header-mobile");
+      } else {
+        $(".mega-menu").removeClass("sticky-header");
+        $(".mega-menu-mobile").removeClass("sticky-header-mobile");
+      }
+
+      // Update last scroll position
+      lastScroll = currentScroll;
+    });
+  });
+
+  $(document).ready(function () {
+    var swiperAroundNews = new Swiper(".swiper-around-news", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
@@ -44,6 +84,24 @@ $(document).ready(function () {
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
+      },
+      // Responsive breakpoints
+      breakpoints: {
+        // when window width is >= 320px
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        // when window width is >= 768px
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+        // when window width is >= 1024px
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
       },
     });
   });
