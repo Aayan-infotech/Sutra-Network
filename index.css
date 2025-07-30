@@ -676,6 +676,7 @@ footer ul.icon-list li a:hover {
   max-width: 100%;
   position: relative;
   overflow: hidden;
+  height: 100%;
 }
 .post-thumb img {
   display: block;
@@ -683,6 +684,7 @@ footer ul.icon-list li a:hover {
   -webkit-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
+  height: 100%;
 }
 .video-icon {
   text-align: center;
@@ -760,7 +762,8 @@ a.post-cat {
   text-decoration: none;
 }
 .video-block .nav .row {
-  padding: 20px 10px;
+  padding: 5px 10px;
+  height: 100%;
 }
 .video-block .nav h3 {
   color: #ddd;
