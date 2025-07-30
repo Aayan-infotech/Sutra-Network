@@ -7,19 +7,21 @@ $(document).ready(function () {
   });
 
   // Hide search bar when clicking outside
-  $(document).on("click", function (e) {
-    if (!$(e.target).closest(".search-container").length) {
-      $(".search-bar").hide();
-    }
-  });
+  // $(document).on("click", function (e) {
+  //   if (!$(e.target).closest(".search-container").length) {
+  //     $(".search-bar").hide();
+  //   }
+  // });
   $(document).ready(function () {
     var swiper = new Swiper(".mySwiper", {
       slidesPerView: 1,
       spaceBetween: 20,
-      pagination: {
-        el: ".swiper-pagination",
-        dynamicBullets: true,
+      
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
       },
+      loop: true,
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -67,6 +69,28 @@ $(document).ready(function () {
       // Update last scroll position
       lastScroll = currentScroll;
     });
+  });
+
+  function displayCurrentDate() {
+    const date = new Date();
+    const options = {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+    };
+    const formattedDate = date.toLocaleDateString("en-US", options);
+    document.getElementById("currentDate").textContent = formattedDate;
+  }
+
+  function displayCurrentYear() {
+    const year = new Date().getFullYear();
+    document.getElementById("currentYear").textContent = year;
+  }
+
+  // Call the function when document is ready
+  $(document).ready(function () {
+    displayCurrentDate();
+    displayCurrentYear();
   });
 
   $(document).ready(function () {

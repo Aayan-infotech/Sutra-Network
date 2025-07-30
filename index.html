@@ -30,9 +30,9 @@
     <header class="header-area">
       <div class="header-topbar">
         <div class="container">
-          <div class="row gy-4 align-items-center">
-            <div class="col-lg-8">
-              <div class="d-flex flex-row gap-2 align-items-center">
+          <div class="row align-items-center">
+            <div class="col-lg-9 pe-lg-0">
+              <div class="d-flex flex-row gap-4 align-items-center">
                 <div class="topbar-trending">
                   <span>Trending</span>
                 </div>
@@ -47,17 +47,13 @@
                     Fundamentally Transform The Government. U.S. Response Subash
                     Says He Will Label Regions By Risk Of...
                   </span>
-                  <span class="text-danger">
-                    People have been infected in United. Stimulus Package Will
-                    Fundamentally Transform The Government. U.S. Response Subash
-                    Says He Will Label Regions By Risk Of...
-                  </span>
+                  <span class="text-danger"> Lorem ipsum top-more-news </span>
                 </marquee>
               </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-3 ps-lg-0">
               <div class="topbar-social d-flex align-items-center">
-                <p>Thursday, March 26, 2025</p>
+                <p id="currentDate"></p>
                 <div class="social">
                   <ul>
                     <li>
@@ -89,9 +85,9 @@
                 </a>
               </div>
             </div>
-            <div class="col-lg-10 col-9 ps-0">
+            <div class="col-lg-10 col-9 ps-0 pe-0 pe-lg-2">
               <div class="header-centerbar-ad">
-                <a href="#"
+                <a href="#" class="d-none d-lg-block"
                   ><img
                     src="https://quomodosoft.com/html/newsprk/assets/images/ad/ad-1.png"
                     alt="ad"
@@ -102,10 +98,7 @@
                 >
                   <!-- Add this near your social icons or wherever you want the search icon -->
                   <div class="search-container ms-3">
-                    <div class="search-icon">
-                      <i class="bi bi-search"></i>
-                    </div>
-                    <div class="search-bar" style="display: none">
+                    <div class="search-bar">
                       <form class="search-form">
                         <input
                           type="text"
@@ -197,11 +190,8 @@
                 <a class="nav-link" href="#">VIDEOS</a>
               </li>
             </ul>
-            <div class="search-container ms-3">
-              <div class="search-icon order-2">
-                <i class="bi bi-search"></i>
-              </div>
-              <div class="search-bar order-1" style="display: none">
+            <div class="search-container">
+              <div class="search-bar order-1 w-100">
                 <form class="search-form">
                   <input
                     type="text"
@@ -282,7 +272,7 @@
     </div>
 
     <!-- topbar section -->
-    <section class="topbar-slider">
+    <section class="topbar-slider px-lg-5">
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <!-- Slide 1 -->
@@ -437,9 +427,11 @@
             </div>
           </div>
         </div>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
+        <!-- <div class="swiper-pagination"></div> -->
+        <div class="overflow-auto">
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
       </div>
     </section>
 
@@ -447,7 +439,7 @@
       <div class="container">
         <div class="row gy-4">
           <div class="col-lg-8">
-            <div class="swiper swiper-topnavnews">
+            <div class="swiper swiper-topnavnews mh-500">
               <div class="swiper-wrapper">
                 <!-- Slide 1 -->
                 <div class="swiper-slide text-start">
@@ -557,7 +549,51 @@
           </div>
           <div class="col-lg-4">
             <h3 class="fw-bold">Top Trending News</h3>
-            <div class="d-flex flex-column gap-3">
+            <div class="d-flex flex-column gap-3 overflow-autocustom">
+              <div class="card border-0 shadow">
+                <div class="card-body p-2">
+                  <a href="#" class="text-decoration-none">
+                    <div class="row">
+                      <div class="col-4">
+                        <img
+                          src="https://quomodosoft.com/html/newsprk/assets/images/gallery-post.jpg"
+                          alt="Gallery Post"
+                          class="img-fluid rounded-3 h-100"
+                        />
+                      </div>
+                      <div class="col-8 p-0">
+                        <span class="fs-7">March 25 , 2025</span>
+                        <h6 class="text-truncate mb-1">News Headline</h6>
+                        <p class="text-secondary fs-6 text-truncate-2">
+                          News Description
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="card border-0 shadow">
+                <div class="card-body p-2">
+                  <a href="#" class="text-decoration-none">
+                    <div class="row">
+                      <div class="col-4">
+                        <img
+                          src="https://quomodosoft.com/html/newsprk/assets/images/gallery-post.jpg"
+                          alt="Gallery Post"
+                          class="img-fluid rounded-3 h-100"
+                        />
+                      </div>
+                      <div class="col-8 p-0">
+                        <span class="fs-7">March 25 , 2025</span>
+                        <h6 class="text-truncate mb-1">News Headline</h6>
+                        <p class="text-secondary fs-6 text-truncate-2">
+                          News Description
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
               <div class="card border-0 shadow">
                 <div class="card-body p-2">
                   <a href="#" class="text-decoration-none">
@@ -1776,7 +1812,7 @@
             </ul>
           </div>
           <div class="col-lg-3 footer-links">
-            <div class="color-white position-relative">
+            <div class="color-white footer position-relative">
               <h2 class="block-title mb-0">
                 <span class="">Top Trending News</span>
               </h2>
@@ -1811,177 +1847,24 @@
           </div>
         </div>
       </div>
-      <div class="mt-3 mb-5">
-        <div class="color-white position-relative">
-          <h2 class="block-title mb-0">
-            <span class="">Latest News</span>
-          </h2>
-        </div>
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <!-- Slide 1 -->
-            <div class="swiper-slide">
-              <div class="slide-content">
-                <a href="#" class="text-decoration-none news-link">
-                  <div class="row">
-                    <div class="col-lg-4 col-6">
-                      <div class="image-placeholder">
-                        <span>People have been infected in United.</span>
-                      </div>
-                    </div>
-                    <div class="col-lg-8 col-6">
-                      <div class="text-content h-100">
-                        <h3 class="main-text text-truncate">
-                          Stimulus Package Will Fundamentally Transform The
-                          Government.
-                        </h3>
-                        <p class="secondary-text">
-                          U.S. Response Subash Says He Will Label Regions By
-                          Risk Of...
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="slide-content">
-                <a href="#" class="text-decoration-none news-link">
-                  <div class="row">
-                    <div class="col-lg-4 col-6">
-                      <div class="image-placeholder">
-                        <span>People have been infected in United.</span>
-                      </div>
-                    </div>
-                    <div class="col-lg-8 col-6">
-                      <div class="text-content h-100">
-                        <h3 class="main-text text-truncate">
-                          Stimulus Package Will Fundamentally Transform The
-                          Government.
-                        </h3>
-                        <p class="secondary-text">
-                          U.S. Response Subash Says He Will Label Regions By
-                          Risk Of...
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="slide-content">
-                <a href="#" class="text-decoration-none news-link">
-                  <div class="row">
-                    <div class="col-lg-4 col-6">
-                      <div class="image-placeholder">
-                        <span>People have been infected in United.</span>
-                      </div>
-                    </div>
-                    <div class="col-lg-8 col-6">
-                      <div class="text-content h-100">
-                        <h3 class="main-text text-truncate">
-                          Stimulus Package Will Fundamentally Transform The
-                          Government.
-                        </h3>
-                        <p class="secondary-text">
-                          U.S. Response Subash Says He Will Label Regions By
-                          Risk Of...
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="slide-content">
-                <a href="#" class="text-decoration-none news-link">
-                  <div class="row">
-                    <div class="col-lg-4 col-6">
-                      <div class="image-placeholder">
-                        <span>People have been infected in United.</span>
-                      </div>
-                    </div>
-                    <div class="col-lg-8 col-6">
-                      <div class="text-content h-100">
-                        <h3 class="main-text text-truncate">
-                          Stimulus Package Will Fundamentally Transform The
-                          Government.
-                        </h3>
-                        <p class="secondary-text">
-                          U.S. Response Subash Says He Will Label Regions By
-                          Risk Of...
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="slide-content">
-                <a href="#" class="text-decoration-none news-link">
-                  <div class="row">
-                    <div class="col-lg-4 col-6">
-                      <div class="image-placeholder">
-                        <span>People have been infected in United.</span>
-                      </div>
-                    </div>
-                    <div class="col-lg-8 col-6">
-                      <div class="text-content h-100">
-                        <h3 class="main-text text-truncate">
-                          Stimulus Package Will Fundamentally Transform The
-                          Government.
-                        </h3>
-                        <p class="secondary-text">
-                          U.S. Response Subash Says He Will Label Regions By
-                          Risk Of...
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="slide-content">
-                <a href="#" class="text-decoration-none news-link">
-                  <div class="row">
-                    <div class="col-lg-4 col-6">
-                      <div class="image-placeholder">
-                        <span>People have been infected in United.</span>
-                      </div>
-                    </div>
-                    <div class="col-lg-8 col-6">
-                      <div class="text-content h-100">
-                        <h3 class="main-text text-truncate">
-                          Stimulus Package Will Fundamentally Transform The
-                          Government.
-                        </h3>
-                        <p class="secondary-text">
-                          U.S. Response Subash Says He Will Label Regions By
-                          Risk Of...
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-pagination"></div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-        </div>
-      </div>
+
       <div class="bottom-footer">
         <div class="container">
           <div class="row">
-            <div class="col-lg-12">
-              <p class="text-center text-light">
-                Copyright © 2025 Sutra Network
+            <div class="col-lg-6">
+              <p class="text-center text-lg-start text-light">
+                Copyright © <span id="currentYear"></span> Sutra Network
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <p class="text-center text-lg-end text-light">
+                Designed and developed by
+                <a
+                  href="https://aayaninfotech.com/"
+                  target="_blank"
+                  class="text-light text-decoration-none"
+                  >Aayan Infotech</a
+                >
               </p>
             </div>
           </div>
