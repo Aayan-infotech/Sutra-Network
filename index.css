@@ -351,6 +351,9 @@ footer ul.icon-list li a:hover {
   font-size: 16px;
   font-weight: 600;
 }
+.footer .mySwiper  h3{
+  color:#fff !important
+}
 .swiper {
   width: 100%;
 }
@@ -429,8 +432,10 @@ footer ul.icon-list li a:hover {
   font-size: 0.75rem;
 }
 .news-link:hover h5,
-.news-link:hover p {
-  color: #d40000;
+.news-link:hover p,
+.news-link:hover h6,
+.news-link:hover h3 {
+  color: #d40000 !important;
 }
 .color-white {
   border-bottom: 2px solid #fff;
