@@ -772,14 +772,16 @@ a.post-cat {
   font-weight: 600;
 }
 .main-content {
-  background: black;
+  background: white;
   backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  /* border-radius: 24px; */
+  border-radius: 24px;
   padding: 60px 40px;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
   position: relative;
   overflow: hidden;
+  margin: 20px;
+  color: black;
 }
 
 .main-content::before {
@@ -811,12 +813,12 @@ a.post-cat {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   line-height: 1.1;
-  text-align:center;
+  text-align: center;
 }
 
 .description {
   font-size: 1.3rem;
-  color: #e5e5e5;
+  color: #000;
   margin-bottom: 50px;
   font-weight: 400;
   line-height: 1.6;
@@ -835,7 +837,7 @@ a.post-cat {
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 30px;
-  color: #ffffff;
+  color: #000;
 }
 
 .contact-grid {
@@ -847,7 +849,7 @@ a.post-cat {
 
 .contact-item {
   background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid black;
   border-radius: 16px;
   padding: 25px;
   transition: all 0.3s ease;
@@ -902,7 +904,7 @@ a.post-cat {
 
 .contact-info {
   font-size: 1.1rem;
-  color: #e5e5e5;
+  color: #000;
   line-height: 1.5;
   word-break: break-word;
 }
