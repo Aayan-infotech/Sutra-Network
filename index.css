@@ -476,7 +476,7 @@ footer ul.icon-list li a:hover {
   color: #888;
   font-size: 14px;
   text-align: center;
-  padding: 20px;
+  /* padding: 20px; */
 }
 
 .swiper-pagination {
@@ -977,8 +977,18 @@ a.post-cat {
   transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(220, 38, 38, 0.3);
 }
-
+.mySwiper .swiper-pagination {
+  display: none;
+}
 @media (max-width: 767.98px) {
+  .mySwiper .swiper-pagination {
+    display: block;
+    top: 100px !important;
+  }
+  .mySwiper .swiper-button-next,
+  .mySwiper .swiper-button-prev {
+    display: none;
+  }
   .main-content {
     padding: 40px 25px;
   }
