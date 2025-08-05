@@ -261,6 +261,34 @@ footer ul.icon-list li a:hover {
 .read-news p {
   color: black;
 }
+.comment-section{
+  max-height:500px !important;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.comment-section::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.comment-section::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+.comment-section::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.comment-section::-webkit-scrollbar-thumb:hover {
+  background: red;
+}
+
+
 .read-news:hover h6 {
   color: #d40000;
 }
