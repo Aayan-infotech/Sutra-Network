@@ -251,6 +251,24 @@ footer ul.icon-list li a:hover {
   background-color: #d40000;
   color: white;
 }
+.related-news a {
+  color: black !important;
+}
+.related-news .contact-item:hover {
+  box-shadow: none !important;
+}
+.read-news h6,
+.read-news p {
+  color: black;
+}
+.read-news:hover h6 {
+  color: #d40000;
+}
+@media (min-width: 1024px) {
+  .related-news {
+    margin-top: 118px;
+  }
+}
 
 /* Responsive styles */
 @media (max-width: 991.98px) {
@@ -454,6 +472,55 @@ footer ul.icon-list li a:hover {
   height: 40%;
   padding: 0 20px;
 }
+
+.comment-card {
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border-left: 4px solid var(--primary-red);
+}
+
+.comment-header {
+  border-bottom: 1px solid #333;
+  padding: 15px 20px;
+}
+
+.comment-author {
+  font-weight: bold;
+  color: BLACK;
+  margin-right: 10px;
+}
+
+.comment-time {
+  color: #333;
+  font-size: 0.85rem;
+}
+
+.comment-body {
+  padding: 20px;
+  line-height: 1.6;
+}
+.comment-actions {
+  padding: 0 20px 10px 20px;
+}
+
+.action-link {
+  color: #000;
+  margin-right: 15px;
+  text-decoration: none;
+  font-size: 0.85rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+.response {
+  width: calc(100% - 15%);
+  margin-left: auto;
+}
+
+.action-link:hover {
+  color: #d40000;
+}
 .bgImage-text-2 {
   position: absolute;
   bottom: 0;
@@ -478,7 +545,25 @@ footer ul.icon-list li a:hover {
   text-align: center;
   /* padding: 20px; */
 }
+.breadcrumb {
+  color: #777;
+  margin: 30px 0 0 0;
+  padding: 0;
+  background: none;
+}
+.breadcrumb > li + li:before {
+  content: "/";
 
+  padding: 0 8px;
+  color: #777;
+}
+.tags {
+  background-color: black;
+  color: #fff;
+  padding: 6px 20px;
+  border-radius: 10px;
+  display: inline-block;
+}
 .swiper-pagination {
   bottom: 10px;
 }
