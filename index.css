@@ -261,8 +261,8 @@ footer ul.icon-list li a:hover {
 .read-news p {
   color: black;
 }
-.comment-section{
-  max-height:500px !important;
+.comment-section {
+  max-height: 500px !important;
   overflow-x: hidden;
   overflow-y: auto;
 }
@@ -288,7 +288,6 @@ footer ul.icon-list li a:hover {
   background: red;
 }
 
-
 .read-news:hover h6 {
   color: #d40000;
 }
@@ -300,6 +299,13 @@ footer ul.icon-list li a:hover {
 
 /* Responsive styles */
 @media (max-width: 991.98px) {
+  .topbar-slider {
+    padding: 0px 20px;
+  }
+  .top-sports-news,
+  .top-technology-news {
+    margin-top: 80px;
+  }
   .mobile-menu-btn {
     display: block;
   }
