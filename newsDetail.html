@@ -28,11 +28,11 @@
     />
   </head>
   <body>
-   <header class="header-area">
+    <header class="header-area">
       <div class="header-topbar">
-        <div class="container">
+        <div class="container-fluid">
           <div class="row align-items-center">
-            <div class="col-lg-8 col-xl-9 pe-lg-0">
+            <div class="col-lg-8 col-xl-7">
               <div class="d-flex flex-row gap-2 gap-lg-5 align-items-center">
                 <div class="topbar-trending">
                   <span>Trending</span>
@@ -52,26 +52,50 @@
                 </marquee>
               </div>
             </div>
-            <div class="col-lg-4 col-xl-3">
-              <div class="search-container d-none d-lg-block">
-                <div class="search-bar order-1 w-100">
-                  <form class="search-form">
-                    <input
-                      type="text"
-                      class="form-control search-input"
-                      placeholder="Search..."
-                    />
-                    <button type="submit" class="btn btn-danger search-submit">
-                      Search
-                    </button>
-                  </form>
+            <div class="col-lg-4 col-xl-5">
+              <div class="d-flex flex-row gap-2">
+                <div class="topbar-social d-flex align-items-center w-100">
+                  <p id="currentDate"></p>
+                  <div class="social">
+                    <ul>
+                      <li>
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="bi bi-twitter-x"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="search-container d-none d-lg-block">
+                  <div class="search-bar order-1 w-100">
+                    <form class="search-form">
+                      <input
+                        type="text"
+                        class="form-control search-input"
+                        placeholder="Search..."
+                      />
+                      <button
+                        type="submit"
+                        class="btn btn-danger search-submit"
+                      >
+                        Search
+                      </button>
+                    </form>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="header-centerbar py-2">
+      <div class="header-centerbar pt-2">
         <div class="container">
           <div class="row gy-3 align-items-lg-center mega-menu-mobile mt-0">
             <div class="col-lg-2 col-3 pe-0">
@@ -124,8 +148,10 @@
           </div>
         </div>
       </div>
-      <nav class="navbar navbar-expand-lg mega-menu desktop-menu">
-        <div class="container-fluid">
+      <nav
+        class="navbar navbar-expand-lg mega-menu desktop-menu justify-content-center"
+      >
+        <div class="">
           <div class="collapse navbar-collapse justify-content-center">
             <ul class="navbar-nav">
               <li class="nav-item">
