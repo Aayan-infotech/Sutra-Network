@@ -16,7 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon"  href="./image/favicon.svg">
+    <link rel="icon" href="./image/favicon.svg" />
     <link rel="stylesheet" href="index.css" />
     <link
       rel="stylesheet"
@@ -52,24 +52,19 @@
                 </marquee>
               </div>
             </div>
-            <div class="col-lg-4 col-xl-3 ps-lg-0">
-              <div class="topbar-social d-flex align-items-center">
-                <p id="currentDate"></p>
-                <div class="social">
-                  <ul>
-                    <li>
-                      <a href="#"><i class="bi bi-facebook"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="bi bi-twitter-x"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="bi bi-youtube"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="bi bi-instagram"></i></a>
-                    </li>
-                  </ul>
+            <div class="col-lg-4 col-xl-3">
+              <div class="search-container d-none d-lg-block">
+                <div class="search-bar order-1 w-100">
+                  <form class="search-form">
+                    <input
+                      type="text"
+                      class="form-control search-input"
+                      placeholder="Search..."
+                    />
+                    <button type="submit" class="btn btn-danger search-submit">
+                      Search
+                    </button>
+                  </form>
                 </div>
               </div>
             </div>
@@ -130,68 +125,60 @@
         </div>
       </div>
       <nav class="navbar navbar-expand-lg mega-menu desktop-menu">
-        <div class="container">
-          <div class="collapse navbar-collapse">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse justify-content-center">
             <ul class="navbar-nav">
               <li class="nav-item">
                 <a class="nav-link active" href="#">HOME</a>
               </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                >
-                  MEGA MENU
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Submenu 1</a></li>
-                  <li><a class="dropdown-item" href="#">Submenu 2</a></li>
-                  <li><a class="dropdown-item" href="#">Submenu 3</a></li>
-                </ul>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Top Stories</a>
               </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                >
-                  PAGES
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">About Us</a></li>
-                  <li><a class="dropdown-item" href="#">Contact</a></li>
-                  <li><a class="dropdown-item" href="#">Authors</a></li>
-                </ul>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Politics</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">BUSINESS</a>
+                <a class="nav-link" href="#">Business</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">WORLD</a>
+                <a class="nav-link" href="#">Technology</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">FASHION</a>
+                <a class="nav-link" href="#">Defence</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">POLITICS</a>
+                <a class="nav-link" href="#">Entertainment</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">SPORTS</a>
+                <a class="nav-link" href="#">Lifestyle</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">HEALTH</a>
+                <a class="nav-link" href="#">World News</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">SCIENCE</a>
+                <a class="nav-link" href="#">Sports</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">VIDEOS</a>
+                <a class="nav-link" href="#">Environment</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">India</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Opinion</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Education & Career</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Science</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Culture & Heritage</a>
               </li>
             </ul>
-            <div class="search-container">
+            <!-- <div class="search-container">
               <div class="search-bar order-1 w-100">
                 <form class="search-form">
                   <input
@@ -204,7 +191,7 @@
                   </button>
                 </form>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </nav>
@@ -229,45 +216,55 @@
       </div>
       <div class="offcanvas-body">
         <ul class="navbar-nav">
-          <li class="nav-item"><a href="#" class="nav-link active">HOME</a></li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              role="button"
-              data-bs-toggle="dropdown"
-            >
-              MEGA MENU
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Submenu 1</a></li>
-              <li><a class="dropdown-item" href="#">Submenu 2</a></li>
-              <li><a class="dropdown-item" href="#">Submenu 3</a></li>
-            </ul>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">HOME</a>
           </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              role="button"
-              data-bs-toggle="dropdown"
-            >
-              PAGES
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">About Us</a></li>
-              <li><a class="dropdown-item" href="#">Contact</a></li>
-              <li><a class="dropdown-item" href="#">Authors</a></li>
-            </ul>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Top Stories</a>
           </li>
-          <li class="nav-item"><a href="#" class="nav-link">BUSINESS</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">WORLD</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">FASHION</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">POLITICS</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">SPORTS</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">HEALTH</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">SCIENCE</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">VIDEOS</a></li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Politics</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Business</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Technology</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Defence</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Entertainment</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Lifestyle</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">World News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sports</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Environment</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">India</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Opinion</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Education & Career</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Science</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Culture & Heritage</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -567,7 +564,7 @@
             </div>
           </div>
           <div class="col-lg-4">
-            <h3 class="fw-bold">Top Trending News</h3>
+            <h3 class="fw-bold">Top Stories</h3>
             <div class="d-flex flex-column gap-3 overflow-autocustom">
               <div class="card border-0 shadow">
                 <div class="card-body p-2">
@@ -713,7 +710,7 @@
           <div class="col-lg-8">
             <div class="color-red position-relative">
               <h2 class="block-title">
-                <span class="">Top Trending News</span>
+                <span class="">Top Politcs News</span>
               </h2>
             </div>
             <div class="row gy-4">
@@ -835,7 +832,7 @@
           <div class="col-lg-4">
             <div class="position-relative">
               <h2 class="block-title">
-                <span class="">Popular News</span>
+                <span class="">Politics Video</span>
               </h2>
             </div>
             <div class="swiper swiper-topnavnews mh-15">
@@ -911,13 +908,13 @@
       </div>
     </section>
 
-    <section class="top-sports-news pt-4">
+    <section class="top-business-news pt-4">
       <div class="container">
         <div class="row gy-4">
           <div class="col-lg-8">
             <div class="color-red position-relative">
               <h2 class="block-title">
-                <span class="">Top Sports News</span>
+                <span class="">Top Business News</span>
               </h2>
             </div>
             <div class="row gy-4">
@@ -925,7 +922,7 @@
                 <a href="#" class="text-decoration-none news-link">
                   <div class="card">
                     <img
-                      src="https://quomodosoft.com/html/newsprk/assets/images/sports-news.jpg"
+                      src="https://quomodosoft.com/html/newsprk/assets/images/gallery-post.jpg"
                       class="card-img-top"
                       alt="trending news image"
                     />
@@ -950,7 +947,7 @@
                       <div class="row g-0">
                         <div class="col-md-4">
                           <img
-                            src="https://quomodosoft.com/html/newsprk/assets/images/sports-news.jpg"
+                            src="https://quomodosoft.com/html/newsprk/assets/images/gallery-post.jpg"
                             class="img-fluid rounded-start h-100"
                             alt="top trending news"
                           />
@@ -979,7 +976,7 @@
                       <div class="row g-0">
                         <div class="col-md-4">
                           <img
-                            src="https://quomodosoft.com/html/newsprk/assets/images/sports-news.jpg"
+                            src="https://quomodosoft.com/html/newsprk/assets/images/gallery-post.jpg"
                             class="img-fluid rounded-start h-100"
                             alt="top trending news"
                           />
@@ -1008,7 +1005,7 @@
                       <div class="row g-0">
                         <div class="col-md-4">
                           <img
-                            src="https://quomodosoft.com/html/newsprk/assets/images/sports-news.jpg"
+                            src="https://quomodosoft.com/html/newsprk/assets/images/gallery-post.jpg"
                             class="img-fluid rounded-start h-100"
                             alt="top trending news"
                           />
@@ -1039,22 +1036,74 @@
           <div class="col-lg-4">
             <div class="position-relative">
               <h2 class="block-title">
-                <span class="">Top Sports Video News</span>
+                <span class="">Business Video Video</span>
               </h2>
             </div>
-            <div class="video-news-post-item h-100 mh-15">
-              <div class="video-news-post-thumb h-100">
-                <img
-                  src="https://quomodosoft.com/html/newsprk/assets/images/video-post-thumb.jpg"
-                  alt="image"
-                  class="h-100"
-                />
-                <div class="play-btn">
-                  <a
-                    class="video-popup"
-                    href="https://www.youtube.com/watch?v=HalMzk1FFM0"
-                    ><i class="bi bi-youtube"></i
-                  ></a>
+            <div class="swiper swiper-topnavnews mh-15">
+              <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide text-start">
+                  <a href="#" class="text-decoration-none news-link h-100">
+                    <div class="bg-image position-relative h-100">
+                      <img
+                        src="https://quomodosoft.com/html/newsprk/assets/images/gallery-post.jpg"
+                        alt="Gallery Post"
+                        class="img-fluid h-100 w-100"
+                      />
+                      <div class="bgImage-text-2">
+                        <div class="text-white">
+                          <b>technology</b> / <b>March 25 , 2025</b>
+                        </div>
+
+                        <h5 class="text-white text-truncate-2">
+                          Japan’s virus success has puzzled the world. Is its
+                          luck running out?
+                        </h5>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide text-start">
+                  <a href="#" class="text-decoration-none news-link h-100">
+                    <div class="bg-image position-relative h-100">
+                      <img
+                        src="https://quomodosoft.com/html/newsprk/assets/images/gallery-post.jpg"
+                        alt="Gallery Post"
+                        class="img-fluid h-100 w-100"
+                      />
+                      <div class="bgImage-text-2">
+                        <div class="text-white">
+                          <b>technology</b> / <b>March 25 , 2025</b>
+                        </div>
+
+                        <h5 class="text-white text-truncate-2">
+                          Japan’s virus success has puzzled the world. Is its
+                          luck running out?
+                        </h5>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide text-start">
+                  <a href="#" class="text-decoration-none news-link h-100">
+                    <div class="bg-image position-relative h-100">
+                      <img
+                        src="https://quomodosoft.com/html/newsprk/assets/images/gallery-post.jpg"
+                        alt="Gallery Post"
+                        class="img-fluid h-100 w-100"
+                      />
+                      <div class="bgImage-text-2">
+                        <div class="text-white">
+                          <b>technology</b> / <b>March 25 , 2025</b>
+                        </div>
+
+                        <h5 class="text-white text-truncate-2">
+                          Japan’s virus success has puzzled the world. Is its
+                          luck running out?
+                        </h5>
+                      </div>
+                    </div>
+                  </a>
                 </div>
               </div>
             </div>
@@ -1063,7 +1112,7 @@
       </div>
     </section>
 
-    <section class="top-technology-news py-4">
+    <section class="top-technology-news pt-4">
       <div class="container">
         <div class="row gy-4">
           <div class="col-lg-8">
@@ -1215,121 +1264,283 @@
       </div>
     </section>
 
-    <section class="block-wrapper video-block top-Video-news py-5">
+    <section class="top-sports-news pt-4 top-section-two">
       <div class="container">
-        <div class="row align-items-center">
-          <div class="video-tab clearfix">
-            <h2 class="video-tab-title">Watch Now</h2>
-            <div class="row">
-              <div class="col-lg-7">
-                <div class="tab-content text-decoration-none">
-                  <div class="tab-pane active animated fadeIn" id="video1">
-                    <div class="post-overaly-style clearfix">
-                      <div class="post-thumb">
-                        <img
-                          class="img-fluid"
-                          src="https://demo.themewinter.com/html/news247/images/news/video/video4.jpg"
-                          alt=""
-                        />
-                        <a
-                          class="popup cboxElement"
-                          href="https://www.youtube.com/embed/XhveHKJWnOQ?autoplay=1&amp;loop=1"
-                        >
-                          <div class="video-icon">
-                            <i class="bi bi-play fs-1 ms-1"></i>
-                          </div>
-                        </a>
-                      </div>
-                      <!-- Post thumb end -->
-                      <div class="post-content">
-                        <h2 class="post-title">
-                          <a href="#"
-                            >Is Running Good for You, Health Benefits of Morning
-                            Running</a
-                          >
-                        </h2>
-                      </div>
-                      <!-- Post content end -->
+        <div class="row gy-4">
+          <div class="col-lg-8">
+            <div class="color-red position-relative">
+              <h2 class="block-title">
+                <span class="">Top Sports News</span>
+              </h2>
+            </div>
+            <div class="row gy-4">
+              <div class="col-lg-6">
+                <a href="#" class="text-decoration-none news-link">
+                  <div class="card">
+                    <img
+                      src="https://quomodosoft.com/html/newsprk/assets/images/sports-news.jpg"
+                      class="card-img-top"
+                      alt="trending news image"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-truncate">Card title</h5>
+                      <span class="fs-7 text-secondary"
+                        ><i class="bi bi-calendar"></i
+                        ><span class="ms-2">March 25 , 2025</span></span
+                      >
+                      <p class="card-text mt-2 text-truncate-2">
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card’s content.
+                      </p>
                     </div>
-                    <!-- Post Overaly Article end -->
-                  </div>
+                  </div></a
+                >
+              </div>
+              <div class="col-lg-6">
+                <div class="d-flex flex-column gap-3">
+                  <a href="#" class="text-decoration-none news-link">
+                    <div class="card">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img
+                            src="https://quomodosoft.com/html/newsprk/assets/images/sports-news.jpg"
+                            class="img-fluid rounded-start h-100"
+                            alt="top trending news"
+                          />
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body p-2">
+                            <h6 class="card-title text-truncate mb-1">
+                              Card title
+                            </h6>
+                            <span class="fs-7 text-secondary mb-1"
+                              ><i class="bi bi-calendar"></i
+                              ><span class="ms-2">March 25 , 2025</span></span
+                            >
+                            <p class="card-text text-truncate-2">
+                              This is a wider card with supporting text below as
+                              a natural lead-in to additional content. This
+                              content is a little bit longer.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="text-decoration-none news-link">
+                    <div class="card">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img
+                            src="https://quomodosoft.com/html/newsprk/assets/images/sports-news.jpg"
+                            class="img-fluid rounded-start h-100"
+                            alt="top trending news"
+                          />
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body p-2">
+                            <h6 class="card-title text-truncate mb-1">
+                              Card title
+                            </h6>
+                            <span class="fs-7 text-secondary mb-1"
+                              ><i class="bi bi-calendar"></i
+                              ><span class="ms-2">March 25 , 2025</span></span
+                            >
+                            <p class="card-text text-truncate-2">
+                              This is a wider card with supporting text below as
+                              a natural lead-in to additional content. This
+                              content is a little bit longer.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="text-decoration-none news-link">
+                    <div class="card">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img
+                            src="https://quomodosoft.com/html/newsprk/assets/images/sports-news.jpg"
+                            class="img-fluid rounded-start h-100"
+                            alt="top trending news"
+                          />
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body p-2">
+                            <h6 class="card-title text-truncate mb-1">
+                              Card title
+                            </h6>
+                            <span class="fs-7 text-secondary mb-1"
+                              ><i class="bi bi-calendar"></i
+                              ><span class="ms-2">March 25 , 2025</span></span
+                            >
+                            <p class="card-text text-truncate-2">
+                              This is a wider card with supporting text below as
+                              a natural lead-in to additional content. This
+                              content is a little bit longer.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
                 </div>
-                <!-- Tab content end -->
               </div>
-              <!--Tab col end -->
-
-              <div class="col-lg-5">
-                <ul class="nav h-100">
-                  <li class="nav-item border-red">
-                    <a class="row" href="#video1" data-toggle="tab">
-                      <div class="post-thumb col-4">
-                        <img
-                          class="img-fluid"
-                          src="https://demo.themewinter.com/html/news247/images/news/video/video4.jpg"
-                          alt=""
-                        />
-                      </div>
-                      <div class="col-8">
-                        <h3>
-                          Is Running Good for You, Health Benefits of Morning
-                          Running
-                        </h3>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="nav-item border-red">
-                    <a class="row" href="#video1" data-toggle="tab">
-                      <div class="post-thumb col-4">
-                        <img
-                          class="img-fluid"
-                          src="https://demo.themewinter.com/html/news247/images/news/video/video4.jpg"
-                          alt=""
-                        />
-                      </div>
-                      <div class="col-8">
-                        <h3>
-                          Is Running Good for You, Health Benefits of Morning
-                          Running
-                        </h3>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="nav-item border-red">
-                    <a class="row" href="#video1" data-toggle="tab">
-                      <div class="post-thumb col-4">
-                        <img
-                          class="img-fluid"
-                          src="https://demo.themewinter.com/html/news247/images/news/video/video4.jpg"
-                          alt=""
-                        />
-                      </div>
-                      <div class="col-8">
-                        <h3>
-                          Is Running Good for You, Health Benefits of Morning
-                          Running
-                        </h3>
-                      </div>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <!--Tab nav col end -->
             </div>
           </div>
-          <!-- Video tab end -->
+          <div class="col-lg-4">
+            <div class="position-relative">
+              <h2 class="block-title">
+                <span class="text-light">Top Defence News</span>
+              </h2>
+            </div>
+            <div class="d-flex flex-column gap-3 overflow-autocustom mh-360">
+              <div class="card border-0 shadow">
+                <div class="card-body p-2">
+                  <a href="#" class="text-decoration-none">
+                    <div class="row">
+                      <div class="col-4">
+                        <img
+                          src="https://quomodosoft.com/html/newsprk/assets/images/gallery-post.jpg"
+                          alt="Gallery Post"
+                          class="img-fluid rounded-3 h-100"
+                        />
+                      </div>
+                      <div class="col-8 p-0">
+                        <span class="fs-7">March 25 , 2025</span>
+                        <h6 class="text-truncate mb-1">News Headline</h6>
+                        <p class="text-secondary fs-6 text-truncate-2">
+                          News Description
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="card border-0 shadow">
+                <div class="card-body p-2">
+                  <a href="#" class="text-decoration-none">
+                    <div class="row">
+                      <div class="col-4">
+                        <img
+                          src="https://quomodosoft.com/html/newsprk/assets/images/gallery-post.jpg"
+                          alt="Gallery Post"
+                          class="img-fluid rounded-3 h-100"
+                        />
+                      </div>
+                      <div class="col-8 p-0">
+                        <span class="fs-7">March 25 , 2025</span>
+                        <h6 class="text-truncate mb-1">News Headline</h6>
+                        <p class="text-secondary fs-6 text-truncate-2">
+                          News Description
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="card border-0 shadow">
+                <div class="card-body p-2">
+                  <a href="#" class="text-decoration-none">
+                    <div class="row">
+                      <div class="col-4">
+                        <img
+                          src="https://quomodosoft.com/html/newsprk/assets/images/gallery-post.jpg"
+                          alt="Gallery Post"
+                          class="img-fluid rounded-3 h-100"
+                        />
+                      </div>
+                      <div class="col-8 p-0">
+                        <span class="fs-7">March 25 , 2025</span>
+                        <h6 class="text-truncate mb-1">News Headline</h6>
+                        <p class="text-secondary fs-6 text-truncate-2">
+                          News Description
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="card border-0 shadow">
+                <div class="card-body p-2">
+                  <a href="#" class="text-decoration-none">
+                    <div class="row">
+                      <div class="col-4">
+                        <img
+                          src="https://quomodosoft.com/html/newsprk/assets/images/gallery-post.jpg"
+                          alt="Gallery Post"
+                          class="img-fluid rounded-3 h-100"
+                        />
+                      </div>
+                      <div class="col-8 p-0">
+                        <span class="fs-7">March 25 , 2025</span>
+                        <h6 class="text-truncate mb-1">News Headline</h6>
+                        <p class="text-secondary fs-6 text-truncate-2">
+                          News Description
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="card border-0 shadow">
+                <div class="card-body p-2">
+                  <a href="#" class="text-decoration-none">
+                    <div class="row">
+                      <div class="col-4">
+                        <img
+                          src="https://quomodosoft.com/html/newsprk/assets/images/gallery-post.jpg"
+                          alt="Gallery Post"
+                          class="img-fluid rounded-3 h-100"
+                        />
+                      </div>
+                      <div class="col-8 p-0">
+                        <span class="fs-7">March 25 , 2025</span>
+                        <h6 class="text-truncate mb-1">News Headline</h6>
+                        <p class="text-secondary fs-6 text-truncate-2">
+                          News Description
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="card border-0 shadow">
+                <div class="card-body p-2">
+                  <a href="#" class="text-decoration-none">
+                    <div class="row">
+                      <div class="col-4">
+                        <img
+                          src="https://quomodosoft.com/html/newsprk/assets/images/gallery-post.jpg"
+                          alt="Gallery Post"
+                          class="img-fluid rounded-3 h-100"
+                        />
+                      </div>
+                      <div class="col-8 p-0">
+                        <span class="fs-7">March 25 , 2025</span>
+                        <h6 class="text-truncate mb-1">News Headline</h6>
+                        <p class="text-secondary fs-6 text-truncate-2">
+                          News Description
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- Row end -->
       </div>
-      <!-- Container end -->
     </section>
 
-    <section class="top-more-news py-4">
+    <section class="top-more-news pt-4">
       <div class="container">
         <div class="row gy-4">
           <div class="col-lg-12">
             <div class="color-red position-relative">
               <h2 class="block-title">
-                <span class="">Top Technology News</span>
+                <span class="">Top Entertainment News</span>
               </h2>
             </div>
             <div class="row gy-4">
@@ -1612,6 +1823,403 @@
       </div>
     </section>
 
+    <section class="top-more-news py-4">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-12">
+            <div class="color-red position-relative">
+              <h2 class="block-title">
+                <span class="">Top Lifestyle News</span>
+              </h2>
+            </div>
+            <div class="row gy-4">
+              <div class="col-lg-4">
+                <div class="d-flex flex-column gap-3">
+                  <a href="#" class="text-decoration-none news-link">
+                    <div class="card">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img
+                            src="https://demo.themewinter.com/html/news247/images/news/tech/gadget1.jpg"
+                            class="img-fluid rounded-start h-100"
+                            alt="top trending news"
+                          />
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body p-2">
+                            <h6 class="card-title text-truncate mb-1">
+                              Card title
+                            </h6>
+                            <span class="fs-7 text-secondary mb-1"
+                              ><i class="bi bi-calendar"></i
+                              ><span class="ms-2">March 25 , 2025</span></span
+                            >
+                            <p class="card-text text-truncate-2">
+                              This is a wider card with supporting text below as
+                              a natural lead-in to additional content. This
+                              content is a little bit longer.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="text-decoration-none news-link">
+                    <div class="card">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img
+                            src="https://demo.themewinter.com/html/news247/images/news/tech/gadget1.jpg"
+                            class="img-fluid rounded-start h-100"
+                            alt="top trending news"
+                          />
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body p-2">
+                            <h6 class="card-title text-truncate mb-1">
+                              Card title
+                            </h6>
+                            <span class="fs-7 text-secondary mb-1"
+                              ><i class="bi bi-calendar"></i
+                              ><span class="ms-2">March 25 , 2025</span></span
+                            >
+                            <p class="card-text text-truncate-2">
+                              This is a wider card with supporting text below as
+                              a natural lead-in to additional content. This
+                              content is a little bit longer.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="text-decoration-none news-link">
+                    <div class="card">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img
+                            src="https://demo.themewinter.com/html/news247/images/news/tech/gadget1.jpg"
+                            class="img-fluid rounded-start h-100"
+                            alt="top trending news"
+                          />
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body p-2">
+                            <h6 class="card-title text-truncate mb-1">
+                              Card title
+                            </h6>
+                            <span class="fs-7 text-secondary mb-1"
+                              ><i class="bi bi-calendar"></i
+                              ><span class="ms-2">March 25 , 2025</span></span
+                            >
+                            <p class="card-text text-truncate-2">
+                              This is a wider card with supporting text below as
+                              a natural lead-in to additional content. This
+                              content is a little bit longer.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="d-flex flex-column gap-3">
+                  <a href="#" class="text-decoration-none news-link">
+                    <div class="card">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img
+                            src="https://demo.themewinter.com/html/news247/images/news/tech/gadget1.jpg"
+                            class="img-fluid rounded-start h-100"
+                            alt="top trending news"
+                          />
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body p-2">
+                            <h6 class="card-title text-truncate mb-1">
+                              Card title
+                            </h6>
+                            <span class="fs-7 text-secondary mb-1"
+                              ><i class="bi bi-calendar"></i
+                              ><span class="ms-2">March 25 , 2025</span></span
+                            >
+                            <p class="card-text text-truncate-2">
+                              This is a wider card with supporting text below as
+                              a natural lead-in to additional content. This
+                              content is a little bit longer.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="text-decoration-none news-link">
+                    <div class="card">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img
+                            src="https://demo.themewinter.com/html/news247/images/news/tech/gadget1.jpg"
+                            class="img-fluid rounded-start h-100"
+                            alt="top trending news"
+                          />
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body p-2">
+                            <h6 class="card-title text-truncate mb-1">
+                              Card title
+                            </h6>
+                            <span class="fs-7 text-secondary mb-1"
+                              ><i class="bi bi-calendar"></i
+                              ><span class="ms-2">March 25 , 2025</span></span
+                            >
+                            <p class="card-text text-truncate-2">
+                              This is a wider card with supporting text below as
+                              a natural lead-in to additional content. This
+                              content is a little bit longer.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="text-decoration-none news-link">
+                    <div class="card">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img
+                            src="https://demo.themewinter.com/html/news247/images/news/tech/gadget1.jpg"
+                            class="img-fluid rounded-start h-100"
+                            alt="top trending news"
+                          />
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body p-2">
+                            <h6 class="card-title text-truncate mb-1">
+                              Card title
+                            </h6>
+                            <span class="fs-7 text-secondary mb-1"
+                              ><i class="bi bi-calendar"></i
+                              ><span class="ms-2">March 25 , 2025</span></span
+                            >
+                            <p class="card-text text-truncate-2">
+                              This is a wider card with supporting text below as
+                              a natural lead-in to additional content. This
+                              content is a little bit longer.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="d-flex flex-column gap-3">
+                  <a href="#" class="text-decoration-none news-link">
+                    <div class="card">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img
+                            src="https://demo.themewinter.com/html/news247/images/news/tech/gadget1.jpg"
+                            class="img-fluid rounded-start h-100"
+                            alt="top trending news"
+                          />
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body p-2">
+                            <h6 class="card-title text-truncate mb-1">
+                              Card title
+                            </h6>
+                            <span class="fs-7 text-secondary mb-1"
+                              ><i class="bi bi-calendar"></i
+                              ><span class="ms-2">March 25 , 2025</span></span
+                            >
+                            <p class="card-text text-truncate-2">
+                              This is a wider card with supporting text below as
+                              a natural lead-in to additional content. This
+                              content is a little bit longer.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="text-decoration-none news-link">
+                    <div class="card">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img
+                            src="https://demo.themewinter.com/html/news247/images/news/tech/gadget1.jpg"
+                            class="img-fluid rounded-start h-100"
+                            alt="top trending news"
+                          />
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body p-2">
+                            <h6 class="card-title text-truncate mb-1">
+                              Card title
+                            </h6>
+                            <span class="fs-7 text-secondary mb-1"
+                              ><i class="bi bi-calendar"></i
+                              ><span class="ms-2">March 25 , 2025</span></span
+                            >
+                            <p class="card-text text-truncate-2">
+                              This is a wider card with supporting text below as
+                              a natural lead-in to additional content. This
+                              content is a little bit longer.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="text-decoration-none news-link">
+                    <div class="card">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img
+                            src="https://demo.themewinter.com/html/news247/images/news/tech/gadget1.jpg"
+                            class="img-fluid rounded-start h-100"
+                            alt="top trending news"
+                          />
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body p-2">
+                            <h6 class="card-title text-truncate mb-1">
+                              Card title
+                            </h6>
+                            <span class="fs-7 text-secondary mb-1"
+                              ><i class="bi bi-calendar"></i
+                              ><span class="ms-2">March 25 , 2025</span></span
+                            >
+                            <p class="card-text text-truncate-2">
+                              This is a wider card with supporting text below as
+                              a natural lead-in to additional content. This
+                              content is a little bit longer.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block-wrapper video-block top-Video-news py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="video-tab clearfix">
+            <h2 class="video-tab-title">WORLD NEWS! Watch Now</h2>
+            <div class="row">
+              <div class="col-lg-7">
+                <div class="tab-content text-decoration-none">
+                  <div class="tab-pane active animated fadeIn" id="video1">
+                    <div class="post-overaly-style clearfix">
+                      <div class="post-thumb">
+                        <img
+                          class="img-fluid"
+                          src="https://demo.themewinter.com/html/news247/images/news/video/video4.jpg"
+                          alt=""
+                        />
+                        <a
+                          class="popup cboxElement"
+                          href="https://www.youtube.com/embed/XhveHKJWnOQ?autoplay=1&amp;loop=1"
+                        >
+                          <div class="video-icon">
+                            <i class="bi bi-play fs-1 ms-1"></i>
+                          </div>
+                        </a>
+                      </div>
+                      <!-- Post thumb end -->
+                      <div class="post-content">
+                        <h2 class="post-title">
+                          <a href="#"
+                            >Is Running Good for You, Health Benefits of Morning
+                            Running</a
+                          >
+                        </h2>
+                      </div>
+                      <!-- Post content end -->
+                    </div>
+                    <!-- Post Overaly Article end -->
+                  </div>
+                </div>
+                <!-- Tab content end -->
+              </div>
+              <!--Tab col end -->
+
+              <div class="col-lg-5">
+                <ul class="nav h-100">
+                  <li class="nav-item border-red">
+                    <a class="row" href="#video1" data-toggle="tab">
+                      <div class="post-thumb col-4">
+                        <img
+                          class="img-fluid"
+                          src="https://demo.themewinter.com/html/news247/images/news/video/video4.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="col-8">
+                        <h3>
+                          Is Running Good for You, Health Benefits of Morning
+                          Running
+                        </h3>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="nav-item border-red">
+                    <a class="row" href="#video1" data-toggle="tab">
+                      <div class="post-thumb col-4">
+                        <img
+                          class="img-fluid"
+                          src="https://demo.themewinter.com/html/news247/images/news/video/video4.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="col-8">
+                        <h3>
+                          Is Running Good for You, Health Benefits of Morning
+                          Running
+                        </h3>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="nav-item border-red">
+                    <a class="row" href="#video1" data-toggle="tab">
+                      <div class="post-thumb col-4">
+                        <img
+                          class="img-fluid"
+                          src="https://demo.themewinter.com/html/news247/images/news/video/video4.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="col-8">
+                        <h3>
+                          Is Running Good for You, Health Benefits of Morning
+                          Running
+                        </h3>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <!--Tab nav col end -->
+            </div>
+          </div>
+          <!-- Video tab end -->
+        </div>
+        <!-- Row end -->
+      </div>
+      <!-- Container end -->
+    </section>
+
     <section class="top-around-world-news py-4">
       <div class="container">
         <div class="row">
@@ -1718,8 +2326,8 @@
               <div class="swiper-pagination"></div>
 
               <!-- Add navigation buttons -->
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
+              <!-- <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div> -->
             </div>
           </div>
         </div>
@@ -1728,16 +2336,1100 @@
 
     <section class="ad-2 pb-4 mt-5">
       <div class="container">
-        <img
-          src="https://demo.themewinter.com/html/news247/images/banner-ads/ad-content-two.png"
-          alt="ad"
-          class="img-fluid w-100 h-100"
-        />
+        <img src="./image/ad.jpg" alt="ad" class="img-fluid w-100 h-100" />
       </div>
     </section>
 
-   <footer class="footer mt-4">
+    <section class="top-around-world-news py-4">
       <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-12">
+            <div class="color-red position-relative">
+              <h2 class="block-title">
+                <span class="">Top Environment News</span>
+              </h2>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <a href="#" class="text-decoration-none news-link">
+              <div class="card">
+                <img
+                  src="https://quomodosoft.com/html/newsprk/assets/images/gallery-post.jpg"
+                  class="card-img-top"
+                  alt="trending news image"
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-truncate">Card title</h5>
+                  <span class="fs-7 text-secondary"
+                    ><i class="bi bi-calendar"></i
+                    ><span class="ms-2">March 25 , 2025</span></span
+                  >
+                  <p class="card-text mt-2 text-truncate-2">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card’s content.
+                  </p>
+                </div>
+              </div></a
+            >
+          </div>
+          <div class="col-lg-6">
+            <a href="#" class="text-decoration-none news-link">
+              <div class="card">
+                <img
+                  src="https://quomodosoft.com/html/newsprk/assets/images/gallery-post.jpg"
+                  class="card-img-top"
+                  alt="trending news image"
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-truncate">Card title</h5>
+                  <span class="fs-7 text-secondary"
+                    ><i class="bi bi-calendar"></i
+                    ><span class="ms-2">March 25 , 2025</span></span
+                  >
+                  <p class="card-text mt-2 text-truncate-2">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card’s content.
+                  </p>
+                </div>
+              </div></a
+            >
+          </div>
+          <div class="col-lg-6">
+            <a href="#" class="text-decoration-none news-link">
+              <div class="card">
+                <img
+                  src="https://quomodosoft.com/html/newsprk/assets/images/gallery-post.jpg"
+                  class="card-img-top"
+                  alt="trending news image"
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-truncate">Card title</h5>
+                  <span class="fs-7 text-secondary"
+                    ><i class="bi bi-calendar"></i
+                    ><span class="ms-2">March 25 , 2025</span></span
+                  >
+                  <p class="card-text mt-2 text-truncate-2">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card’s content.
+                  </p>
+                </div>
+              </div></a
+            >
+          </div>
+          <div class="col-lg-6">
+            <a href="#" class="text-decoration-none news-link">
+              <div class="card">
+                <img
+                  src="https://quomodosoft.com/html/newsprk/assets/images/gallery-post.jpg"
+                  class="card-img-top"
+                  alt="trending news image"
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-truncate">Card title</h5>
+                  <span class="fs-7 text-secondary"
+                    ><i class="bi bi-calendar"></i
+                    ><span class="ms-2">March 25 , 2025</span></span
+                  >
+                  <p class="card-text mt-2 text-truncate-2">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card’s content.
+                  </p>
+                </div>
+              </div></a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="top-around-world-news py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="color-red position-relative">
+              <h2 class="block-title">
+                <span class="">Top India News</span>
+              </h2>
+            </div>
+            <div class="swiper swiper-around-news">
+              <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide">
+                  <a href="#" class="text-decoration-none news-link">
+                    <div class="card mb-3" style="max-width: 540px">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img
+                            src="https://quomodosoft.com/html/newsprk/assets/images/gallery-post.jpg"
+                            class="img-fluid rounded-start"
+                            alt="..."
+                          />
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title text-truncate">Card title</h5>
+                            <span class="fs-7 text-secondary"
+                              ><i class="bi bi-calendar"></i
+                              ><span class="ms-2">March 25 , 2025</span></span
+                            >
+                            <p class="card-text mt-2 text-truncate-2">
+                              Some quick example text to build on the card title
+                              and make up the bulk of the card’s content.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="text-decoration-none news-link">
+                    <div class="card mb-3" style="max-width: 540px">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img
+                            src="https://quomodosoft.com/html/newsprk/assets/images/gallery-post.jpg"
+                            class="img-fluid rounded-start"
+                            alt="..."
+                          />
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title text-truncate">Card title</h5>
+                            <span class="fs-7 text-secondary"
+                              ><i class="bi bi-calendar"></i
+                              ><span class="ms-2">March 25 , 2025</span></span
+                            >
+                            <p class="card-text mt-2 text-truncate-2">
+                              Some quick example text to build on the card title
+                              and make up the bulk of the card’s content.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="text-decoration-none news-link">
+                    <div class="card mb-3" style="max-width: 540px">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img
+                            src="https://quomodosoft.com/html/newsprk/assets/images/gallery-post.jpg"
+                            class="img-fluid rounded-start"
+                            alt="..."
+                          />
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title text-truncate">Card title</h5>
+                            <span class="fs-7 text-secondary"
+                              ><i class="bi bi-calendar"></i
+                              ><span class="ms-2">March 25 , 2025</span></span
+                            >
+                            <p class="card-text mt-2 text-truncate-2">
+                              Some quick example text to build on the card title
+                              and make up the bulk of the card’s content.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="text-decoration-none news-link">
+                    <div class="card mb-3" style="max-width: 540px">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img
+                            src="https://quomodosoft.com/html/newsprk/assets/images/gallery-post.jpg"
+                            class="img-fluid rounded-start"
+                            alt="..."
+                          />
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title text-truncate">Card title</h5>
+                            <span class="fs-7 text-secondary"
+                              ><i class="bi bi-calendar"></i
+                              ><span class="ms-2">March 25 , 2025</span></span
+                            >
+                            <p class="card-text mt-2 text-truncate-2">
+                              Some quick example text to build on the card title
+                              and make up the bulk of the card’s content.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Add pagination -->
+              <div class="swiper-pagination"></div>
+
+              <!-- Add navigation buttons -->
+              <!-- <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="top-more-news py-4">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-12">
+            <div class="color-red position-relative">
+              <h2 class="block-title">
+                <span class="">Top Opinion News</span>
+              </h2>
+            </div>
+            <div class="row gy-4">
+              <div class="col-lg-4">
+                <div class="d-flex flex-column gap-3">
+                  <a href="#" class="text-decoration-none news-link">
+                    <div class="card">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img
+                            src="https://demo.themewinter.com/html/news247/images/news/tech/gadget1.jpg"
+                            class="img-fluid rounded-start h-100"
+                            alt="top trending news"
+                          />
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body p-2">
+                            <h6 class="card-title text-truncate mb-1">
+                              Card title
+                            </h6>
+                            <span class="fs-7 text-secondary mb-1"
+                              ><i class="bi bi-calendar"></i
+                              ><span class="ms-2">March 25 , 2025</span></span
+                            >
+                            <p class="card-text text-truncate-2">
+                              This is a wider card with supporting text below as
+                              a natural lead-in to additional content. This
+                              content is a little bit longer.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="text-decoration-none news-link">
+                    <div class="card">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img
+                            src="https://demo.themewinter.com/html/news247/images/news/tech/gadget1.jpg"
+                            class="img-fluid rounded-start h-100"
+                            alt="top trending news"
+                          />
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body p-2">
+                            <h6 class="card-title text-truncate mb-1">
+                              Card title
+                            </h6>
+                            <span class="fs-7 text-secondary mb-1"
+                              ><i class="bi bi-calendar"></i
+                              ><span class="ms-2">March 25 , 2025</span></span
+                            >
+                            <p class="card-text text-truncate-2">
+                              This is a wider card with supporting text below as
+                              a natural lead-in to additional content. This
+                              content is a little bit longer.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="text-decoration-none news-link">
+                    <div class="card">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img
+                            src="https://demo.themewinter.com/html/news247/images/news/tech/gadget1.jpg"
+                            class="img-fluid rounded-start h-100"
+                            alt="top trending news"
+                          />
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body p-2">
+                            <h6 class="card-title text-truncate mb-1">
+                              Card title
+                            </h6>
+                            <span class="fs-7 text-secondary mb-1"
+                              ><i class="bi bi-calendar"></i
+                              ><span class="ms-2">March 25 , 2025</span></span
+                            >
+                            <p class="card-text text-truncate-2">
+                              This is a wider card with supporting text below as
+                              a natural lead-in to additional content. This
+                              content is a little bit longer.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="d-flex flex-column gap-3">
+                  <a href="#" class="text-decoration-none news-link">
+                    <div class="card">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img
+                            src="https://demo.themewinter.com/html/news247/images/news/tech/gadget1.jpg"
+                            class="img-fluid rounded-start h-100"
+                            alt="top trending news"
+                          />
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body p-2">
+                            <h6 class="card-title text-truncate mb-1">
+                              Card title
+                            </h6>
+                            <span class="fs-7 text-secondary mb-1"
+                              ><i class="bi bi-calendar"></i
+                              ><span class="ms-2">March 25 , 2025</span></span
+                            >
+                            <p class="card-text text-truncate-2">
+                              This is a wider card with supporting text below as
+                              a natural lead-in to additional content. This
+                              content is a little bit longer.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="text-decoration-none news-link">
+                    <div class="card">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img
+                            src="https://demo.themewinter.com/html/news247/images/news/tech/gadget1.jpg"
+                            class="img-fluid rounded-start h-100"
+                            alt="top trending news"
+                          />
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body p-2">
+                            <h6 class="card-title text-truncate mb-1">
+                              Card title
+                            </h6>
+                            <span class="fs-7 text-secondary mb-1"
+                              ><i class="bi bi-calendar"></i
+                              ><span class="ms-2">March 25 , 2025</span></span
+                            >
+                            <p class="card-text text-truncate-2">
+                              This is a wider card with supporting text below as
+                              a natural lead-in to additional content. This
+                              content is a little bit longer.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="text-decoration-none news-link">
+                    <div class="card">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img
+                            src="https://demo.themewinter.com/html/news247/images/news/tech/gadget1.jpg"
+                            class="img-fluid rounded-start h-100"
+                            alt="top trending news"
+                          />
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body p-2">
+                            <h6 class="card-title text-truncate mb-1">
+                              Card title
+                            </h6>
+                            <span class="fs-7 text-secondary mb-1"
+                              ><i class="bi bi-calendar"></i
+                              ><span class="ms-2">March 25 , 2025</span></span
+                            >
+                            <p class="card-text text-truncate-2">
+                              This is a wider card with supporting text below as
+                              a natural lead-in to additional content. This
+                              content is a little bit longer.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="d-flex flex-column gap-3">
+                  <a href="#" class="text-decoration-none news-link">
+                    <div class="card">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img
+                            src="https://demo.themewinter.com/html/news247/images/news/tech/gadget1.jpg"
+                            class="img-fluid rounded-start h-100"
+                            alt="top trending news"
+                          />
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body p-2">
+                            <h6 class="card-title text-truncate mb-1">
+                              Card title
+                            </h6>
+                            <span class="fs-7 text-secondary mb-1"
+                              ><i class="bi bi-calendar"></i
+                              ><span class="ms-2">March 25 , 2025</span></span
+                            >
+                            <p class="card-text text-truncate-2">
+                              This is a wider card with supporting text below as
+                              a natural lead-in to additional content. This
+                              content is a little bit longer.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="text-decoration-none news-link">
+                    <div class="card">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img
+                            src="https://demo.themewinter.com/html/news247/images/news/tech/gadget1.jpg"
+                            class="img-fluid rounded-start h-100"
+                            alt="top trending news"
+                          />
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body p-2">
+                            <h6 class="card-title text-truncate mb-1">
+                              Card title
+                            </h6>
+                            <span class="fs-7 text-secondary mb-1"
+                              ><i class="bi bi-calendar"></i
+                              ><span class="ms-2">March 25 , 2025</span></span
+                            >
+                            <p class="card-text text-truncate-2">
+                              This is a wider card with supporting text below as
+                              a natural lead-in to additional content. This
+                              content is a little bit longer.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="text-decoration-none news-link">
+                    <div class="card">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img
+                            src="https://demo.themewinter.com/html/news247/images/news/tech/gadget1.jpg"
+                            class="img-fluid rounded-start h-100"
+                            alt="top trending news"
+                          />
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body p-2">
+                            <h6 class="card-title text-truncate mb-1">
+                              Card title
+                            </h6>
+                            <span class="fs-7 text-secondary mb-1"
+                              ><i class="bi bi-calendar"></i
+                              ><span class="ms-2">March 25 , 2025</span></span
+                            >
+                            <p class="card-text text-truncate-2">
+                              This is a wider card with supporting text below as
+                              a natural lead-in to additional content. This
+                              content is a little bit longer.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="top-sports-news pb-4 top-section-two">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-8">
+            <div class="color-red position-relative">
+              <h2 class="block-title">
+                <span class="">Education & Career</span>
+              </h2>
+            </div>
+            <div class="row gy-4">
+              <div class="col-lg-6">
+                <a href="#" class="text-decoration-none news-link">
+                  <div class="card">
+                    <img
+                      src="https://quomodosoft.com/html/newsprk/assets/images/sports-news.jpg"
+                      class="card-img-top"
+                      alt="trending news image"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-truncate">Card title</h5>
+                      <span class="fs-7 text-secondary"
+                        ><i class="bi bi-calendar"></i
+                        ><span class="ms-2">March 25 , 2025</span></span
+                      >
+                      <p class="card-text mt-2 text-truncate-2">
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card’s content.
+                      </p>
+                    </div>
+                  </div></a
+                >
+              </div>
+              <div class="col-lg-6">
+                <div class="d-flex flex-column gap-3">
+                  <a href="#" class="text-decoration-none news-link">
+                    <div class="card">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img
+                            src="https://quomodosoft.com/html/newsprk/assets/images/sports-news.jpg"
+                            class="img-fluid rounded-start h-100"
+                            alt="top trending news"
+                          />
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body p-2">
+                            <h6 class="card-title text-truncate mb-1">
+                              Card title
+                            </h6>
+                            <span class="fs-7 text-secondary mb-1"
+                              ><i class="bi bi-calendar"></i
+                              ><span class="ms-2">March 25 , 2025</span></span
+                            >
+                            <p class="card-text text-truncate-2">
+                              This is a wider card with supporting text below as
+                              a natural lead-in to additional content. This
+                              content is a little bit longer.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="text-decoration-none news-link">
+                    <div class="card">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img
+                            src="https://quomodosoft.com/html/newsprk/assets/images/sports-news.jpg"
+                            class="img-fluid rounded-start h-100"
+                            alt="top trending news"
+                          />
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body p-2">
+                            <h6 class="card-title text-truncate mb-1">
+                              Card title
+                            </h6>
+                            <span class="fs-7 text-secondary mb-1"
+                              ><i class="bi bi-calendar"></i
+                              ><span class="ms-2">March 25 , 2025</span></span
+                            >
+                            <p class="card-text text-truncate-2">
+                              This is a wider card with supporting text below as
+                              a natural lead-in to additional content. This
+                              content is a little bit longer.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="text-decoration-none news-link">
+                    <div class="card">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img
+                            src="https://quomodosoft.com/html/newsprk/assets/images/sports-news.jpg"
+                            class="img-fluid rounded-start h-100"
+                            alt="top trending news"
+                          />
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body p-2">
+                            <h6 class="card-title text-truncate mb-1">
+                              Card title
+                            </h6>
+                            <span class="fs-7 text-secondary mb-1"
+                              ><i class="bi bi-calendar"></i
+                              ><span class="ms-2">March 25 , 2025</span></span
+                            >
+                            <p class="card-text text-truncate-2">
+                              This is a wider card with supporting text below as
+                              a natural lead-in to additional content. This
+                              content is a little bit longer.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="position-relative">
+              <h2 class="block-title">
+                <span class="text-light">Top Science News</span>
+              </h2>
+            </div>
+            <div class="d-flex flex-column gap-3 overflow-autocustom mh-360">
+              <div class="card border-0 shadow">
+                <div class="card-body p-2">
+                  <a href="#" class="text-decoration-none">
+                    <div class="row">
+                      <div class="col-4">
+                        <img
+                          src="https://quomodosoft.com/html/newsprk/assets/images/gallery-post.jpg"
+                          alt="Gallery Post"
+                          class="img-fluid rounded-3 h-100"
+                        />
+                      </div>
+                      <div class="col-8 p-0">
+                        <span class="fs-7">March 25 , 2025</span>
+                        <h6 class="text-truncate mb-1">News Headline</h6>
+                        <p class="text-secondary fs-6 text-truncate-2">
+                          News Description
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="card border-0 shadow">
+                <div class="card-body p-2">
+                  <a href="#" class="text-decoration-none">
+                    <div class="row">
+                      <div class="col-4">
+                        <img
+                          src="https://quomodosoft.com/html/newsprk/assets/images/gallery-post.jpg"
+                          alt="Gallery Post"
+                          class="img-fluid rounded-3 h-100"
+                        />
+                      </div>
+                      <div class="col-8 p-0">
+                        <span class="fs-7">March 25 , 2025</span>
+                        <h6 class="text-truncate mb-1">News Headline</h6>
+                        <p class="text-secondary fs-6 text-truncate-2">
+                          News Description
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="card border-0 shadow">
+                <div class="card-body p-2">
+                  <a href="#" class="text-decoration-none">
+                    <div class="row">
+                      <div class="col-4">
+                        <img
+                          src="https://quomodosoft.com/html/newsprk/assets/images/gallery-post.jpg"
+                          alt="Gallery Post"
+                          class="img-fluid rounded-3 h-100"
+                        />
+                      </div>
+                      <div class="col-8 p-0">
+                        <span class="fs-7">March 25 , 2025</span>
+                        <h6 class="text-truncate mb-1">News Headline</h6>
+                        <p class="text-secondary fs-6 text-truncate-2">
+                          News Description
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="card border-0 shadow">
+                <div class="card-body p-2">
+                  <a href="#" class="text-decoration-none">
+                    <div class="row">
+                      <div class="col-4">
+                        <img
+                          src="https://quomodosoft.com/html/newsprk/assets/images/gallery-post.jpg"
+                          alt="Gallery Post"
+                          class="img-fluid rounded-3 h-100"
+                        />
+                      </div>
+                      <div class="col-8 p-0">
+                        <span class="fs-7">March 25 , 2025</span>
+                        <h6 class="text-truncate mb-1">News Headline</h6>
+                        <p class="text-secondary fs-6 text-truncate-2">
+                          News Description
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="card border-0 shadow">
+                <div class="card-body p-2">
+                  <a href="#" class="text-decoration-none">
+                    <div class="row">
+                      <div class="col-4">
+                        <img
+                          src="https://quomodosoft.com/html/newsprk/assets/images/gallery-post.jpg"
+                          alt="Gallery Post"
+                          class="img-fluid rounded-3 h-100"
+                        />
+                      </div>
+                      <div class="col-8 p-0">
+                        <span class="fs-7">March 25 , 2025</span>
+                        <h6 class="text-truncate mb-1">News Headline</h6>
+                        <p class="text-secondary fs-6 text-truncate-2">
+                          News Description
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="card border-0 shadow">
+                <div class="card-body p-2">
+                  <a href="#" class="text-decoration-none">
+                    <div class="row">
+                      <div class="col-4">
+                        <img
+                          src="https://quomodosoft.com/html/newsprk/assets/images/gallery-post.jpg"
+                          alt="Gallery Post"
+                          class="img-fluid rounded-3 h-100"
+                        />
+                      </div>
+                      <div class="col-8 p-0">
+                        <span class="fs-7">March 25 , 2025</span>
+                        <h6 class="text-truncate mb-1">News Headline</h6>
+                        <p class="text-secondary fs-6 text-truncate-2">
+                          News Description
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="top-more-news pb-4">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-12">
+            <div class="color-red position-relative">
+              <h2 class="block-title">
+                <span class="">Culture & Heritage</span>
+              </h2>
+            </div>
+            <div class="row gy-4">
+              <div class="col-lg-4">
+                <div class="d-flex flex-column gap-3">
+                  <a href="#" class="text-decoration-none news-link">
+                    <div class="card">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img
+                            src="https://demo.themewinter.com/html/news247/images/news/tech/gadget1.jpg"
+                            class="img-fluid rounded-start h-100"
+                            alt="top trending news"
+                          />
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body p-2">
+                            <h6 class="card-title text-truncate mb-1">
+                              Card title
+                            </h6>
+                            <span class="fs-7 text-secondary mb-1"
+                              ><i class="bi bi-calendar"></i
+                              ><span class="ms-2">March 25 , 2025</span></span
+                            >
+                            <p class="card-text text-truncate-2">
+                              This is a wider card with supporting text below as
+                              a natural lead-in to additional content. This
+                              content is a little bit longer.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="text-decoration-none news-link">
+                    <div class="card">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img
+                            src="https://demo.themewinter.com/html/news247/images/news/tech/gadget1.jpg"
+                            class="img-fluid rounded-start h-100"
+                            alt="top trending news"
+                          />
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body p-2">
+                            <h6 class="card-title text-truncate mb-1">
+                              Card title
+                            </h6>
+                            <span class="fs-7 text-secondary mb-1"
+                              ><i class="bi bi-calendar"></i
+                              ><span class="ms-2">March 25 , 2025</span></span
+                            >
+                            <p class="card-text text-truncate-2">
+                              This is a wider card with supporting text below as
+                              a natural lead-in to additional content. This
+                              content is a little bit longer.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="text-decoration-none news-link">
+                    <div class="card">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img
+                            src="https://demo.themewinter.com/html/news247/images/news/tech/gadget1.jpg"
+                            class="img-fluid rounded-start h-100"
+                            alt="top trending news"
+                          />
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body p-2">
+                            <h6 class="card-title text-truncate mb-1">
+                              Card title
+                            </h6>
+                            <span class="fs-7 text-secondary mb-1"
+                              ><i class="bi bi-calendar"></i
+                              ><span class="ms-2">March 25 , 2025</span></span
+                            >
+                            <p class="card-text text-truncate-2">
+                              This is a wider card with supporting text below as
+                              a natural lead-in to additional content. This
+                              content is a little bit longer.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="d-flex flex-column gap-3">
+                  <a href="#" class="text-decoration-none news-link">
+                    <div class="card">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img
+                            src="https://demo.themewinter.com/html/news247/images/news/tech/gadget1.jpg"
+                            class="img-fluid rounded-start h-100"
+                            alt="top trending news"
+                          />
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body p-2">
+                            <h6 class="card-title text-truncate mb-1">
+                              Card title
+                            </h6>
+                            <span class="fs-7 text-secondary mb-1"
+                              ><i class="bi bi-calendar"></i
+                              ><span class="ms-2">March 25 , 2025</span></span
+                            >
+                            <p class="card-text text-truncate-2">
+                              This is a wider card with supporting text below as
+                              a natural lead-in to additional content. This
+                              content is a little bit longer.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="text-decoration-none news-link">
+                    <div class="card">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img
+                            src="https://demo.themewinter.com/html/news247/images/news/tech/gadget1.jpg"
+                            class="img-fluid rounded-start h-100"
+                            alt="top trending news"
+                          />
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body p-2">
+                            <h6 class="card-title text-truncate mb-1">
+                              Card title
+                            </h6>
+                            <span class="fs-7 text-secondary mb-1"
+                              ><i class="bi bi-calendar"></i
+                              ><span class="ms-2">March 25 , 2025</span></span
+                            >
+                            <p class="card-text text-truncate-2">
+                              This is a wider card with supporting text below as
+                              a natural lead-in to additional content. This
+                              content is a little bit longer.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="text-decoration-none news-link">
+                    <div class="card">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img
+                            src="https://demo.themewinter.com/html/news247/images/news/tech/gadget1.jpg"
+                            class="img-fluid rounded-start h-100"
+                            alt="top trending news"
+                          />
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body p-2">
+                            <h6 class="card-title text-truncate mb-1">
+                              Card title
+                            </h6>
+                            <span class="fs-7 text-secondary mb-1"
+                              ><i class="bi bi-calendar"></i
+                              ><span class="ms-2">March 25 , 2025</span></span
+                            >
+                            <p class="card-text text-truncate-2">
+                              This is a wider card with supporting text below as
+                              a natural lead-in to additional content. This
+                              content is a little bit longer.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="d-flex flex-column gap-3">
+                  <a href="#" class="text-decoration-none news-link">
+                    <div class="card">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img
+                            src="https://demo.themewinter.com/html/news247/images/news/tech/gadget1.jpg"
+                            class="img-fluid rounded-start h-100"
+                            alt="top trending news"
+                          />
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body p-2">
+                            <h6 class="card-title text-truncate mb-1">
+                              Card title
+                            </h6>
+                            <span class="fs-7 text-secondary mb-1"
+                              ><i class="bi bi-calendar"></i
+                              ><span class="ms-2">March 25 , 2025</span></span
+                            >
+                            <p class="card-text text-truncate-2">
+                              This is a wider card with supporting text below as
+                              a natural lead-in to additional content. This
+                              content is a little bit longer.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="text-decoration-none news-link">
+                    <div class="card">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img
+                            src="https://demo.themewinter.com/html/news247/images/news/tech/gadget1.jpg"
+                            class="img-fluid rounded-start h-100"
+                            alt="top trending news"
+                          />
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body p-2">
+                            <h6 class="card-title text-truncate mb-1">
+                              Card title
+                            </h6>
+                            <span class="fs-7 text-secondary mb-1"
+                              ><i class="bi bi-calendar"></i
+                              ><span class="ms-2">March 25 , 2025</span></span
+                            >
+                            <p class="card-text text-truncate-2">
+                              This is a wider card with supporting text below as
+                              a natural lead-in to additional content. This
+                              content is a little bit longer.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="text-decoration-none news-link">
+                    <div class="card">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img
+                            src="https://demo.themewinter.com/html/news247/images/news/tech/gadget1.jpg"
+                            class="img-fluid rounded-start h-100"
+                            alt="top trending news"
+                          />
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body p-2">
+                            <h6 class="card-title text-truncate mb-1">
+                              Card title
+                            </h6>
+                            <span class="fs-7 text-secondary mb-1"
+                              ><i class="bi bi-calendar"></i
+                              ><span class="ms-2">March 25 , 2025</span></span
+                            >
+                            <p class="card-text text-truncate-2">
+                              This is a wider card with supporting text below as
+                              a natural lead-in to additional content. This
+                              content is a little bit longer.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer mt-4">
+      <div class="container-fluid">
         <div class="row gy-4 py-4">
           <div class="col-lg-3 text-center">
             <div
@@ -1753,7 +3445,7 @@
                   Your source for the lifestyle news. Visit our main page for
                   more
                 </p>
-                <p class="text-light">We're social, connect with us:</p>
+                <p class="text-light text-start">We're social, connect with us:</p>
                 <ul
                   class="d-flex ps-0 flex-row gap-2 align-items-start mt-3 list-unstyled icon-list"
                 >
@@ -1773,7 +3465,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 footer-links">
+          <div class="col-lg-2 footer-links">
             <div class="color-white position-relative">
               <h2 class="block-title mb-0">
                 <span class="">About</span>
@@ -1805,16 +3497,36 @@
               </li>
             </ul>
           </div>
-          <div class="col-lg-3 footer-links">
+          <div class="col-lg-5 footer-links">
             <div class="color-white position-relative">
               <h2 class="block-title mb-0">
                 <span class="">Top Categories</span>
               </h2>
             </div>
-            <ul class="list-unstyled mt-3 d-flex flex-column gap-3">
+            <ul class="list-unstyled mt-3 d-flex flex-column gap-3 flex-wrap mh-250">
+               <li>
+                <a href="#" class="text-decoration-none text-light"
+                  >Politics</a
+                >
+              </li>
+               <li>
+                <a href="#" class="text-decoration-none text-light"
+                  >Business</a
+                >
+              </li>
               <li>
                 <a href="#" class="text-decoration-none text-light"
                   >Technology</a
+                >
+              </li>
+               <li>
+                <a href="#" class="text-decoration-none text-light"
+                  >Defence</a
+                >
+              </li>
+               <li>
+                <a href="#" class="text-decoration-none text-light"
+                  >Entertainment</a
                 >
               </li>
               <li>
@@ -1823,19 +3535,34 @@
                 >
               </li>
               <li>
-                <a href="#" class="text-decoration-none text-light">Health</a>
+                <a href="#" class="text-decoration-none text-light">World News</a>
+              </li>
+               <li>
+                <a href="#" class="text-decoration-none text-light"
+                  >Sports</a
+                >
               </li>
               <li>
-                <a href="#" class="text-decoration-none text-light">Travel</a>
+                <a href="#" class="text-decoration-none text-light">Environment</a>
               </li>
               <li>
                 <a href="#" class="text-decoration-none text-light"
-                  >Entertainment</a
+                  >Education & Career</a
+                >
+              </li>
+                <li>
+                <a href="#" class="text-decoration-none text-light"
+                  >Science</a
+                >
+              </li>
+                <li>
+                <a href="#" class="text-decoration-none text-light"
+                  >Culture & Heritage</a
                 >
               </li>
             </ul>
           </div>
-          <div class="col-lg-3 footer-links">
+          <div class="col-lg-2 footer-links">
             <div class="color-white footer position-relative">
               <h2 class="block-title mb-0">
                 <span class="">Top Trending News</span>
@@ -1873,7 +3600,7 @@
       </div>
 
       <div class="bottom-footer">
-        <div class="container">
+        <div class="container-fluid">
           <div class="row">
             <div class="col-lg-6">
               <p class="text-center text-lg-start text-light">

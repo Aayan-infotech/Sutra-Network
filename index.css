@@ -86,15 +86,17 @@ footer ul.icon-list li a:hover {
 }
 .mega-menu .navbar-nav {
   flex-direction: row;
+  /* overflow-y: auto; */
 }
 
 .mega-menu .nav-link {
   color: black;
   font-weight: 500;
-  padding: 15px 20px;
+  padding: 10px 6px !important;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 0.75rem;
   position: relative;
+  display: inline;
 }
 
 .mega-menu .nav-link:hover,
@@ -633,7 +635,12 @@ footer ul.icon-list li a:hover {
   overflow-y: auto;
   max-height: 460px;
 }
-
+.mh-360{
+  max-height: 360px !important;
+}
+.mh-250{
+  max-height: 250px !important;
+}
 .overflow-autocustom::-webkit-scrollbar {
   width: 10px;
 }
@@ -1149,7 +1156,7 @@ a.post-cat {
   }
   .search-container {
     position: relative;
-    width: auto;
+    width: 100%;
     display: inline-block;
   }
   .search-bar {
