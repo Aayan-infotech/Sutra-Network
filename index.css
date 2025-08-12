@@ -68,7 +68,7 @@ footer {
   background: #1c1c1c;
   color: #fff;
 }
-footer ul.icon-list li a {
+footer ul.icon-list li a , .contact-icon-list li a{
   display: block;
   width: 32px;
   height: 32px;
@@ -80,7 +80,7 @@ footer ul.icon-list li a {
   text-align: center;
   border-radius: 100%;
 }
-footer ul.icon-list li a:hover {
+footer ul.icon-list li a:hover , .contact-icon-list li a:hover{
   background: #d32f2f;
   transform: rotate(360deg);
 }
@@ -153,6 +153,63 @@ footer ul.icon-list li a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.inner-page-header {
+    padding: 0;
+    position: relative;
+}
+
+.inner-page-header .banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    z-index: 10;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.inner-page-header .header-page-locator ul li {
+    display: inline-block;
+    color: #d32f2f;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 12px;
+}
+.inner-page-header .header-page-locator ul li a {
+    color: #ffffff;
+    transition: all 0.5s ease 0s;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.inner-page-header .header-page-title h1 {
+    color: #ffffff;
+    margin: 0;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+
+.inner-page-header .header-page-subtitle p {
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.inner-page-header:after {
+    background: rgba(0, 0, 0, 0.8) none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.inner-page-header , .inner-page-header img{
+  max-height:300px
 }
 
 .mobile-menu-close {
